@@ -1,0 +1,92 @@
+body
+{
+    height: 100%;
+    font-family: 'Bree Serif', serif;
+}
+
+section{
+    height: 648px;
+}
+
+label
+{
+    color: #9e1321;
+}
+
+footer
+{
+    background-color: black;
+}
+
+
+/* menu nav */
+
+.nav-item 
+{
+    margin-left: 20px;
+}
+
+/* Slider */
+
+.carousel-caption h1
+{
+    margin-bottom: 300px;
+    font-size: 70px;
+    color: #9e1321;
+}
+
+#carouselExampleSlidesOnly img
+{
+    height: 704px; 
+}
+
+/* page de contact  */
+
+#contact
+{
+    background-image: url("../img/smoke2.jpg");
+}
+
+#contact .container
+{
+    width: 600px;
+    padding-top: 100px;
+    margin-right: 200px;
+}
+
+#contact .btn
+{
+    color: #9e1321;
+    
+}
+
+
+
+/* page connexion */
+
+#connectPage
+{
+    background-image: url("../img/smoke2.jpg");
+}
+
+
+
+#connectPage .container
+{
+    width: 400px;
+    padding-top: 100px;
+    margin-right: 200px;
+}
+
+#connectPage .btn
+{
+    color: #9e1321;
+    
+}
+
+
+
+.footer-copyright
+{
+    color: white;
+}
