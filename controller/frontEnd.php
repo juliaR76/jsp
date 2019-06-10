@@ -18,14 +18,6 @@ function infos()
     require('template_Front.php');
 }
 
-function contact()
-{
-    ob_start();
-    require('view/contact.php');
-    $content = ob_get_clean(); 
-    require('template_Front.php');
-}
-
 function inscription()
 {
     if(isset($_POST['creerCompte']))
@@ -139,7 +131,47 @@ function connexion()
 
 function contact()
 {
+    if(isset($_POST['sendMail']))
+    {
+        if(!empty($_POST['object']) AND !empty($_POST['email']) AND !empty($_POST['message']))
+        {
+            $header="MIME-version: 1.0\r\n";
+            $header.='From:"PrimFX.com"<support@jeanf.com>'."\n";
+            $header.='Content-Type:text/html; charset="utf-8"'."\n";
+            $header.='Content-Transfer-Encoding: 8bit';
 
+            $message=
+                '<html>
+                    <body>
+                        <div align="center">   
+                            <u>objet de l\'expéditeur :</u>'.$_POST['object'].'<br />
+                            <u>Mail de l\'expéditeur :</u>'.$_POST['email'].'<br />
+                            <br />
+                            '.nl2br($_POST['message']).'
+                        </div>
+                    </body>
+                </html>';
+
+             mail("julia.ristic@gmail.com", "Contact - Mon site", $message, $header);
+             echo "<script>window.alert(\"Votre message a bien été envoyé !\")</script>";
+        }
+        else
+        {
+            $erreur ='<html>
+                        <body>
+                            <div class="alert alert-danger" role="alert">
+                                Attention de bien remplir tout les champs de votre billet !
+                            </div>
+                        </body>
+                        </html>';
+        }
+    } 
+    ob_start();
+    require('view/contact.php');
+    $content = ob_get_clean(); 
+    require('template_Front.php');    
 }
+
+
 
 
