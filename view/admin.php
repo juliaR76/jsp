@@ -24,12 +24,12 @@
                 </div>
                 <div id="containerProfil">
                     <div id="infoProfil">
-                        <h2 id="titre">Pseudo</h2>
-                        <p>Nom : <span></span></p>
-                        <p>Prenom : <span></span></p>
-                        <p>Adresse: <span></span></p>
-                        <p>Email : <span></span></p>
-                        <p>Tel : <span></span></p>
+                        <h2 id="titre"><?= $_SESSION['pseudo'] ?></h2>
+                        <p>Nom : <span><?= $_SESSION['last_name'] ?></span></p>
+                        <p>Prenom : <span><?= $_SESSION['first_name'] ?></span></p>
+                        <p>Adresse: <span><?= $_SESSION['adresse'] ?></span></p>
+                        <p>Email : <span><?= $_SESSION['email'] ?></span></p>
+                        <p><i class="fas fa-phone-alt"></i> : <span><?= $_SESSION['phone'] ?></span></p>
                     </div>
                 </div>
             </div>
