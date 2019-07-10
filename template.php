@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="public/css/bootstrap/aos.css">
     <link rel="stylesheet" href="public/css/style.css">
 
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeS4qwUAAAAACB_Hs0M_iVkUoipIhFjzuwmOykQ"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render="reCAPTCHA_site_key"></script>
     <script>
   grecaptcha.ready(function() {
-    grecaptcha.execute('6LeS4qwUAAAAACB_Hs0M_iVkUoipIhFjzuwmOykQ', {
+    grecaptcha.execute('reCAPTCHA_site_key', {
         action: 'home'}).then(function(token) {
             document.getElementById("token").value = token;        
         });
