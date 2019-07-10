@@ -4,7 +4,8 @@ Ce projet est une plateforme de cours pour les jeunes Sapeur pompier.
 Elle permet aux élèves d'acceder à un planning géré par les formateurs et aux cours.
 Côté administrateur on retrouveras l'ecriture, la modification et la suppression de ceci et La gestion d'un planning.
 
-!(public/img/screenshot/jsphome.png);
+
+![homePage](/relative/path/to/jsphome.png?raw=true)
 
 ## Langages Utilisés ?
 
