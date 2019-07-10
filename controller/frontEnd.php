@@ -8,7 +8,7 @@ function home(){
 
         $url = 'https://www.google.com/recaptcha/api/siteverify';
         $data = [
-            'secret' => "6LeS4qwUAAAAAITou3lReGOb7qef-pALA3y1aIyW",
+            'secret' => "Secret_Key",
             'response' => $_POST['token'],
             'remoteip' => $_SERVER['REMOTE_ADDR']
             ];
