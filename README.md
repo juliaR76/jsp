@@ -5,7 +5,7 @@ Elle permet aux élèves d'acceder à un planning géré par les formateurs et a
 Côté administrateur on retrouveras l'ecriture, la modification et la suppression de ceci et La gestion d'un planning.
 
 
-![homePage](/relative/path/to/jsphome.png?raw=true)
+![homePage](http://full/path/to/jsphome.png?raw=true)
 
 ## Langages Utilisés ?
 
@@ -20,4 +20,4 @@ Bien entendu !
 
 !(public/img/screenshot/responsive.png);
 
-![responsive](/relative/path/to/responsive.png?raw=true)
+![responsive](http://full/path/to/responsive.png?raw=true)
