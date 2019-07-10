@@ -5,7 +5,7 @@ Elle permet aux élèves d'acceder à un planning géré par les formateurs et a
 Côté administrateur on retrouveras l'ecriture, la modification et la suppression de ceci et La gestion d'un planning.
 
 
-![homePage](https://raw.github.com/juliaR76/jsp/master/path/to/jsphome.png?raw=true)
+![jsphome](https://user-images.githubusercontent.com/48591773/60975356-279d0080-a32c-11e9-8984-80ac2673036b.png)
 
 
 ## Langages Utilisés ?
@@ -21,4 +21,5 @@ Bien entendu !
 
 !(public/img/screenshot/responsive.png);
 
-![responsive](http://full/path/to/responsive.png?raw=true)
+![responsive](https://user-images.githubusercontent.com/48591773/60975434-4b604680-a32c-11e9-9121-feafa19e9022.png)
+
