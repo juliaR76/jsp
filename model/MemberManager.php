@@ -32,12 +32,31 @@ class MemberManager
 
     public function get($pseudo, $pass)
     {
-        $req = $this->db->prepare('SELECT id, pseudo, last_name, first_name, adresse, pass, email, phone FROM member WHERE pseudo = :pseudo AND pass = :pass');
+        $req = $this->db->prepare('SELECT id, pseudo, avatar, last_name, first_name, adresse, pass, email, phone FROM member WHERE pseudo = :pseudo AND pass = :pass');
         $req->execute([
             'pseudo' => $pseudo,
             'pass' => $pass
         ]); 
         $data = $req->fetch(PDO::FETCH_ASSOC);
         return new Member($data);
+    }
+
+    public function getdb()
+    {
+        $req = $this->db->prepare('SELECT id, pseudo, avatar, last_name, first_name, adresse, pass, email, phone FROM member');
+        $req->execute(); 
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+        return new Member($data);
+    }
+
+   
+  
+    public function update(Member $modif)
+    {
+        $req = $this->db->prepare('UPDATE member SET avatar WHERE avatar = :avatar AND id = :id');
+        $req->execute([
+            'avatar' => $modif->avatar(),
+            'id' => $modif->id()
+        ]);
     }
 }
