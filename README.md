@@ -11,15 +11,13 @@ Côté administrateur on retrouveras l'ecriture, la modification et la suppressi
 ## Langages Utilisés ?
 
 * HTML5, CSS3
-* javaScript, jQuery,
+* javaScript, jQuery
 * PHP7, MySQL
 
 
 ## Responsive ?
 
 Bien entendu !
-
-!(public/img/screenshot/responsive.png);
 
 ![responsive](https://user-images.githubusercontent.com/48591773/60975434-4b604680-a32c-11e9-9121-feafa19e9022.png)
 
