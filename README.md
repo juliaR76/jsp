@@ -19,4 +19,4 @@ Bien entendu !
 
 !(public/img/screenshot/responsive.png);
 
-
+![responsive](/relative/path/to/responsive.png?raw=true)
